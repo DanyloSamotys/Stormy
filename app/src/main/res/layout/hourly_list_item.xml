@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                tools:background="#3498DB">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeLabel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        tools:text="12:00"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconImageView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/timeLabel"
+        android:layout_toEndOf="@+id/timeLabel"
+        android:src="@drawable/partly_cloudy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/temperatureLabel"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        tools:text="10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryLabel"
+        android:layout_alignParentTop="false"
+        android:layout_toRightOf="@+id/iconImageView"
+        android:layout_toEndOf="@+id/iconImageView"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:layout_toLeftOf="@+id/temperatureLabel"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        tools:text="Partly cloudy"/>
+</RelativeLayout>
