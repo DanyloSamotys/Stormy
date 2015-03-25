@@ -43,7 +43,7 @@ public class DailyForecastActivity extends ListActivity /*Or any other view with
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
 
-        String message = "Hujnia slucziajetsa";
+        String message = "";
 
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }

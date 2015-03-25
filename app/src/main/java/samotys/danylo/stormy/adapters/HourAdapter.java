@@ -75,7 +75,7 @@ public class HourAdapter extends RecyclerView.Adapter<HourAdapter.HourViewHolder
         public void onClick(View v) {
 
 
-            String message = "Sh*t happens:(";
+            String message = "";
             Toast.makeText(mContext, message, Toast.LENGTH_LONG).show();
 
         }
